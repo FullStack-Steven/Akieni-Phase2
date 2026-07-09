@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #08090B;
+    --surface: #0F1115;
+    --card: #171A20;
+    --border: #232730;
+    --text: #F4F7FA;
+    --text-secondary: #A6B0BE;
+    --primary: #4C8DFF;
+    --secondary: #4ED9E6;
+    --container: 1280px;
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --radius-sm: 10px;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.header {
+    width: 92%;
+    max-width: var(--container);
+    margin: 24px auto 0;
+}
+
+.navbar {
+    height: 78px;
+    padding: 18px 48px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+.logo {
+    width: 180px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+    color: var(--text);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin: 0 80px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: .2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links a.active {
+    color: var(--text);
+}
+
+.nav-links a.active::after {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 999px;
+    margin-top: 8px;
+}
+
+.cta {
+    width: 140px;
+    height: 46px;
+    background: var(--primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.burger {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger span {
+    width: 18px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 999px;
+}
