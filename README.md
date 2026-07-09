@@ -96,6 +96,14 @@ Akieni-Phase2/
 | **3.2** | Intermédiaire | Création d'une **carte produit** avec mise en page soignée |
 | **3.3** | Avancé | Réalisation d'une **landing page avancée** avec sections complètes |
 
+### Semaine 4 — CSS FLEXBOX & GRID
+
+| Projet | Niveau | Description |
+|:------:|:------:|:------------|
+| **3.4** | Débutant | Création d'une **barre de Navigation Responsive** (couleurs, typographie, marges) |
+| **3.2** | Intermédiaire | Création d'une **Galerie Photo** avec mise en page soignée |
+| **3.3** | Avancé | Conception d'un **Dashboard Admin Layout** complet |
+
 ---
 
 ## Technologies utilisées

@@ -112,13 +112,18 @@ button {
     flex-shrink: 0;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .burger {
     display: none;
     width: 44px;
     height: 44px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
+    background: #171A20;
+    border: 1px solid #232730;
+    border-radius: 10px;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -128,6 +133,34 @@ button {
 .burger span {
     width: 18px;
     height: 2px;
-    background: var(--text);
+    background: #F4F7FA;
     border-radius: 999px;
+}
+
+@media (max-width:978px){
+
+    .burger{
+        display:flex;
+    }
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        margin-top:20px;
+        background:#11151B;
+        border:1px solid #232730;
+        border-radius:18px;
+        padding:28px;
+        gap:22px;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+    }
+
+    #menu-toggle:checked ~ .nav-links{
+        display:flex;
+    }
+
 }
